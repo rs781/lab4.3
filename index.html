@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>חנות יהודאיקה - חפצים קדושים וחפצי דת</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">חנות יהודאיקה ✡</h1>
+            <p class="tagline">פריטים דתיים יהודיים באיכות גבוהה וחפצים קדושים</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Add Product Section -->
+        <section class="add-product-section">
+            <h2>הוסף מוצר חדש</h2>
+            <form id="productForm" class="product-form">
+                <div class="form-group">
+                    <label for="productTitle">שם המוצר</label>
+                    <input 
+                        type="text" 
+                        id="productTitle" 
+                        name="title" 
+                        placeholder="לדוגמה: מצביע תורה בעבודת יד" 
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="productPrice">מחיר ($)</label>
+                    <input 
+                        type="number" 
+                        id="productPrice" 
+                        name="price" 
+                        placeholder="0.00" 
+                        min="0" 
+                        step="0.01"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="productImage">כתובת אתר של תמונה</label>
+                    <input 
+                        type="url" 
+                        id="productImage" 
+                        name="image" 
+                        placeholder="https://example.com/image.jpg"
+                    >
+                </div>
+
+                <button type="submit" class="btn-add">הוסף מוצר</button>
+            </form>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="products-section">
+            <h2>אוסף שלנו</h2>
+            <div id="productsGrid" class="products-grid">
+                <!-- Products will be added here dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 חנות יהודאיקה. כל הפריטים מעוצבים בכבוד ובטיפול.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
